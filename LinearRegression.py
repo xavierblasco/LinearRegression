@@ -151,10 +151,10 @@ if index_worse == 0:
 	A4 = A2[:, 1:] 	#Get All data of second 50% of rows least first one (worse) on testing set
 elif 0 < index_worse and index_worse < num_of_variables:
 	A3 = A1[:, range(0,index_worse)+range(index_worse+1,num_of_variables)] 	#Get All data of second 50% of rows least first one (worse) on training set	
-	A4 = A5[:, range(0,index_worse)+range(index_worse+1,num_of_variables)] 	#Get All data of second 50% of rows least first one (worse) on testing set
+	A4 = A2[:, range(0,index_worse)+range(index_worse+1,num_of_variables)] 	#Get All data of second 50% of rows least first one (worse) on testing set
 elif index_worse == num_of_variables:
 	A3 = A1[:, :-1] 	#Get All data of second 50% of rows least first one (worse) on training set	
-	A4 = A5[:, :-1] 	#Get All data of second 50% of rows least first one (worse) on testing set
+	A4 = A2[:, :-1] 	#Get All data of second 50% of rows least first one (worse) on testing set
 
 
 
@@ -176,7 +176,7 @@ print  "R2 for model with all variables on testing set = ",R2_4
 
 print ""
 print "Previous R2: ", R2_3, " New R2: ", R2_4
-print "New Model is similar to previous model"
+print "New Model is (--I found an error, it's solved on GitHub but I can not run code at this moment--) than previous model"
 
 
 
