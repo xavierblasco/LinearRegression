@@ -171,12 +171,14 @@ print  "Training MSE for model with all variables (least worse) on testing set =
 #Mean and var is the same tah Q3 because is based just on y2
 FVU_4 = test_MSE_4/var	
 R2_4 = 1-FVU_4
+
+
 print  "FVU for model with all variables on testing set = ",FVU_4
 print  "R2 for model with all variables on testing set = ",R2_4
 
 print ""
 print "Previous R2: ", R2_3, " New R2: ", R2_4
-print "New Model is (--I found an error, it's solved on GitHub but I can not run code at this moment--) than previous model"
+print "New Model is similar to previous model"
 
 
 
